@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC A+ ARMY BD - বাংলাদেশের শিক্ষার্থীদের জন্য</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="langBn" class="active">বাংলা</button>
+        <button id="langEn">English</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text" data-i18n="appName">SSC A+ ARMY BD</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-i18n="home">হোম</a>
+                <a href="#courses" class="nav-link" data-i18n="courses">কোর্স</a>
+                <a href="#practice" class="nav-link" data-i18n="practice">প্র্যাকটিস</a>
+                <a href="#leaderboard" class="nav-link" data-i18n="leaderboard">লিডারবোর্ড</a>
+                <a href="#profile" class="nav-link" data-i18n="profile">প্রোফাইল</a>
+            </div>
+            <div class="nav-user">
+                <span class="user-xp">XP: 250</span>
+                <span class="user-streak">🔥 3</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="heroTitle">বাংলাদেশের শিক্ষার্থীদের জন্য গেমিফাইড লার্নিং</h1>
+            <p data-i18n="heroSubtitle">এসএসসি এবং ক্লাস ১-১০ পর্যন্ত সকল বিষয় শিখুন মজার গেমের মাধ্যমে</p>
+            <button class="cta-button" data-i18n="startLearning">শেখা শুরু করুন</button>
+        </div>
+        <div class="hero-background">
+            <!-- AI-generated background with floating educational icons -->
+            <div class="floating-icons">
+                <div class="icon">📚</div>
+                <div class="icon">✏️</div>
+                <div class="icon">🔬</div>
+                <div class="icon">🧮</div>
+                <div class="icon">📝</div>
+                <div class="icon">🏆</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Cards -->
+    <section class="dashboard">
+        <h2 data-i18n="dashboardTitle">আপনার লার্নিং ড্যাশবোর্ড</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <h3 data-i18n="aiTest">এআই টেস্ট পেপার</h3>
+                <p data-i18n="aiTestDesc">এআই দ্বারা তৈরি করা প্রশ্নপত্র সমাধান করুন</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎮</div>
+                <h3 data-i18n="gamifiedLearning">গেমিফাইড লার্নিং</h3>
+                <p data-i18n="gamifiedLearningDesc">খেলার মাধ্যমে শিখুন এবং পুরস্কার জিতুন</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⭐</div>
+                <h3 data-i18n="points">পয়েন্টস</h3>
+                <p data-i18n="pointsDesc">প্রশ্ন সমাধান করে পয়েন্ট অর্জন করুন</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏅</div>
+                <h3 data-i18n="badges">ব্যাজ</h3>
+                <p data-i18n="badgesDesc">আপনার অর্জন দেখান বিশেষ ব্যাজের মাধ্যমে</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3 data-i18n="leaderboard">লিডারবোর্ড</h3>
+                <p data-i18n="leaderboardDesc">অন্যান্য শিক্ষার্থীদের সাথে প্রতিযোগিতা করুন</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Selection -->
+    <section class="class-selection">
+        <h2 data-i18n="selectClass">ক্লাস নির্বাচন করুন</h2>
+        <div class="class-cards">
+            <div class="class-card" data-class="1">
+                <h3>ক্লাস ১</h3>
+                <p>প্রাথমিক শিক্ষা</p>
+            </div>
+            <div class="class-card" data-class="9-10">
+                <h3>ক্লাস ৯-১০</h3>
+                <p>এসএসসি প্রস্তুতি</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stream Selection (for SSC) -->
+    <section class="stream-selection hidden">
+        <h2 data-i18n="selectStream">স্ট্রিম নির্বাচন করুন</h2>
+        <div class="stream-cards">
+            <div class="stream-card" data-stream="science">
+                <h3>বিজ্ঞান</h3>
+                <p>Physics, Chemistry, Biology</p>
+            </div>
+            <div class="stream-card" data-stream="arts">
+                <h3>মানবিক</h3>
+                <p>History, Geography, Civics</p>
+            </div>
+            <div class="stream-card" data-stream="commerce">
+                <h3>বাণিজ্য</h3>
+                <p>Accounting, Business, Economics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subject Selection -->
+    <section class="subject-selection hidden">
+        <h2 data-i18n="selectSubject">বিষয় নির্বাচন করুন</h2>
+        <div class="subject-cards">
+            <!-- Will be populated dynamically -->
+        </div>
+    </section>
+
+    <!-- Chapter Selection -->
+    <section class="chapter-selection hidden">
+        <h2 data-i18n="selectChapter">অধ্যায় নির্বাচন করুন</h2>
+        <div class="chapter-cards">
+            <!-- Will be populated dynamically -->
+        </div>
+    </section>
+
+    <!-- Practice Interface -->
+    <section class="practice-interface hidden">
+        <div class="practice-header">
+            <div class="hearts">
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="question-count">
+                <span>১/১০</span>
+            </div>
+        </div>
+        
+        <div class="question-container">
+            <h3 class="question-text">নিচের কোনটি বাংলাদেশের জাতীয় ফুল?</h3>
+            <div class="options-container">
+                <div class="option">শাপলা</div>
+                <div class="option">গোলাপ</div>
+                <div class="option">বেলি</div>
+                <div class="option">গাঁদা</div>
+            </div>
+        </div>
+        
+        <div class="practice-footer">
+            <button class="check-button" data-i18n="checkAnswer">উত্তর যাচাই করুন</button>
+        </div>
+    </section>
+
+    <!-- Results Screen -->
+    <section class="results-screen hidden">
+        <h2 data-i18n="results">ফলাফল</h2>
+        <div class="score-display">
+            <span class="score">৮/১০</span>
+            <span class="score-text">অভিনন্দন!</span>
+        </div>
+        <div class="xp-earned">
+            <span data-i18n="xpEarned">অর্জিত এক্সপি:</span> ৮০
+        </div>
+        <div class="actions">
+            <button class="review-button" data-i18n="reviewAnswers">উত্তরগুলি রিভিউ করুন</button>
+            <button class="continue-button" data-i18n="continue">চালিয়ে যান</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-i18n="footerText">SSC A+ ARMY BD - বাংলাদেশের শিক্ষার্থীদের জন্য গেমিফাইড লার্নিং প্ল্যাটফর্ম</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
